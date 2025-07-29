@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #222;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00adb5;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(to right, #00adb5, #393e46);
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+}
+
+.hero-content span {
+  color: #ffd369;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: #ffd369;
+  color: #222;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #ffbb00;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.skills-grid span {
+  background: #eeeeee;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.skills-grid span:hover {
+  background: #00adb5;
+  color: white;
+}
+
+.project-card {
+  background: white;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  border-left: 4px solid #00adb5;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.certifications ul {
+  list-style: circle;
+  padding-left: 1.5rem;
+}
+
+.contact a {
+  color: #00adb5;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #222;
+  color: white;
+}
+.nav-links a.active {
+  color: #ffd369;
+  font-weight: bold;
+  border-bottom: 2px solid #ffd369;
+}
+
